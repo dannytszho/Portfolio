@@ -1,0 +1,166 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danny Tsui</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="static/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="static/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="static/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="static/plugins/github-activity/github-activity-0.1.5.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="static/css/styles.css">
+    
+</head> 
+
+<body>
+	    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left rounded-circle" src="static/images/profile1.png" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Danny Tsui</h1>
+                <h2 class="desc">Software Developer</h2>   
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/dannytszho"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/danny-tsui-457705113/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/dannytszho"><i class="fab fa-github-alt"></i></a></li>    
+                    <li class="list-inline-item"><a href="https://stackexchange.com/users/21298431/amateurcoder"><i class="fab fa-stack-overflow"></i></a></li>               
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="mailto: dannytszho@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<h4>About Me</h4>
+					<hr>
+					<p>I love technology, learning, coding, doing research and collaborating.</p>
+					            <li><i class="fas fa-map-marker-alt"></i> <span class="sr-only">Location:</span>San Diego, US</li>
+                                <li><i class="fas fa-envelope"></i> <span class="sr-only">Email:</span><a href="#">dannytszho@gmail.com</a></li>
+				</div>
+			</div>
+
+			<div class="col-md-8">
+				<div class="card card-body h-100  border-info">
+					<h4>My First project as a Developer</h4>
+					<hr>
+					<p>10 months after writing my first Hello World program, I decided to find some fun projects to work on. The projects on Relevant Projects are the ones I have been recently working on. </p>
+
+					<p></p>
+
+					<p>From this you’ll see that I’m someone that jumps before I can talk myself out of doing something scary.</p>
+
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>Relevant Projects</h5>
+					<hr>
+					<!--Project 1-->
+					<a href="http://danny-blog.herokuapp.com/" target="_blank">Web Applications - A blog that allows other users to share their ideas</a>
+					<ul><li><small>Object Orientated Programmed using Python and Django web framework, styled with JavaScript, CSS and HTML using Bootstrap.
+					<li>Created database to store administrative and authentication information using SQLite
+					<li>Created version control for back-up and deployed using Django-Heroku.
+					<li>Created A/B test plans and manage implementation.</small></li></ul>
+
+					<!--Project 2-->
+					<a href="{% url 'd_portfolio:defi' %}"><small>DeFi Application - Yield farming that earns interest in forms of DAI Token</small></a>
+
+					<ul><li><small>Ethereum Smart contract programmed using Solidity, Web3.js, Node.js, Truffle development framework and styled with JavaScript, CSS and HTML using Bootstrap.
+					<li>Connected personal account with the Ethereum blockchain network (Ganche) to interact with the DeFi app using Ethereum wallet (MetaMask).
+					<li>Wrote tests against smart contracts using Javascript, Mocha testing framework, Chai assertion library and deployed it to Ganche.</small></li></ul>
+
+					<!--Project 3-->
+					<a href="{% url 'd_portfolio:COVID19' %}">Data Visualization - Visualize global COVID19 data</a>
+
+					<ul><li><small>Processed and extracted global COVID-19 json data using Python.
+					<li>Showed the distribution of COVID-19 cases around the world using Python Plotly Libraries.
+					<li>Improved runtime to process and extract data using Numpy, Pandas libraries.</small></li></ul>
+
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-45">
+					<h5>Technical Skills</h5>
+					<hr>
+					<h10>Programming Languages:</h10>
+					<ul><li>Python, Django, Bash, HTML/CSS, JavaScript, Solidity</li></ul>
+					<h10>Software Development and Systems:</h10>
+					<ul><li>Github, macOS, Windows, Git, Jupyter, Microsoft Visual Studio, SQLite, Django, Web3.js, Truffle framework, Mocha testing framework, Chai assertion library</li></ul>
+				</div>
+				<br>
+				<div class="card card-body h-45">
+					<h5>Education and Languages</h5>
+					<hr>
+						<div class="content">
+							<div class="item">
+								<h10 class="title"><i class="fas fa-graduation-cap"></i> BSc Biochemistry/ Cell Biology</h10>
+                                <br>
+                                <ul><li><h12 class="university">University of California, San Diego <span class="year">(2015-2017)</span></h12></li></ul>
+
+                                <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Fluent <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Chinese(Cantonese):</strong></span>
+                                    <span class="level">Fluent <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Chinese(Mandarin):</strong></span>
+                                    <span class="level">Fluent <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                            </ul>
+                        </div>
+                    </div>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>How I Learn</h5>
+					<hr>
+					<p>Reverse Engineer & Build Ugly Prototypes First.</p>
+
+					<p>I can learn just about anything by having a final product to tear apart piece by piece. I break the code where I need to figure out why things work the way they do. Documentation is just a reference.</p>
+				</div>
+			</div>
+
+
+
+		</div>
+		<br>
+	</div>
+
+
+</body>
+</html>
